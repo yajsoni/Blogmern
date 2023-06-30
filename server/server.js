@@ -23,8 +23,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
-app.get('/', (req, res) => {
- return res.send("api is working");
+app.get("/", (req, res) => {
+ return res.status(200).json("api is working");
 })
 //route
 app.use("/api", blogRoute);
