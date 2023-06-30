@@ -24,6 +24,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
+  console.log("hit home api");
  return res.status(200).json("api is working");
 })
 //route
