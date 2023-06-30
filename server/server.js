@@ -8,7 +8,7 @@ const authRoute = require("./routes/auth");
 const app = express();
 
 //connect cloud database
-const connectDB = "mongodb://127.0.0.1:27017/mernblog";
+const connectDB = "mongodb://127.0.0.1/mernblog";
 mongoose
   .connect(connectDB, {
     useNewUrlParser: true,
