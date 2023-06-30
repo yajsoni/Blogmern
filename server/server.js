@@ -12,7 +12,8 @@ const connectDB = "mongodb://localhost:27017/mernblog";
 mongoose
   .connect(connectDB, {
     useNewUrlParser: true,
-    useUnifiedTopology: false,
+    useUnifiedTopology: true,
+    family:4
   })
   .then(() => console.log("connect success"))
   .catch((e) => console.log("connect error"+e));
