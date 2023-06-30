@@ -15,7 +15,7 @@ mongoose
     useUnifiedTopology: false,
   })
   .then(() => console.log("connect success"))
-  .catch(() => console.log("connect error"));
+  .catch((e) => console.log("connect error"+e));
 
 //middleware
 app.use(express.json());
